@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome"
+    android:background="@color/PrimaryColor">
+
+    <ImageView
+        android:id="@+id/shape.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sudut"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageView
+        android:id="@+id/image.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_below="@id/shape.1"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image.1"
+        android:text="Temukan Event Mu!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:text="Jangan lewatkan kesempatan mu untuk mendapatkan experimen yang tak terlupakan , dengan event - event seru bersama
+MYTEE"
+        android:padding="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/text2"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="Sign In"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsbold"
+        />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/signin"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="Sign Up"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsbold"
+        />
+</RelativeLayout>

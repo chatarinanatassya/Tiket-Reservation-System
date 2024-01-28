@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/card_bg">
+
+    <ImageView
+        android:id="@+id/imagetour"
+        android:layout_width="120dp"
+        android:layout_height="1300dp"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ontour8" />
+
+    <TextView
+        android:id="@+id/eventname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/imagetour"
+        android:text="Red Velvet : R to V 2023"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_below="@id/eventname"
+        android:layout_alignStart="@id/eventname"
+        android:layout_marginTop="4dp"
+        android:text="Jakarta"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_below="@id/country"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="From $200"
+        android:textSize="15sp"
+        android:layout_alignStart="@id/country"/>
+    
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/baseline_arrow_forward_ios_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        />
+
+</RelativeLayout>

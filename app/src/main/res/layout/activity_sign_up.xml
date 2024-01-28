@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/PrimaryColor">
+
+    <ImageView
+        android:id="@+id/shape.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sudut"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageView
+        android:id="@+id/back_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Welcome Onbard!"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_welcome"
+        android:text="Let’s help you meet up your event."
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ly_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/event"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="10dp"
+            android:hint="Enter your full name"
+            android:backgroundTint="@color/pink"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <EditText
+            android:id="@+id/email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="10dp"
+            android:hint="Enter you email"
+            android:backgroundTint="@color/pink"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <EditText
+            android:id="@+id/cpass_signup"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:hint="Create password"
+            android:backgroundTint="@color/pink"
+            android:fontFamily="@font/poppinsregular"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_below="@id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:width="300dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppinssemibold"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atau gunakan akun"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alternatif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgapi"
+            android:src="@drawable/apple"
+            android:contentDescription="Logo Apple"
+            />
+
+        <ImageButton
+            android:id="@+id/signupgoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgapi"
+            android:src="@drawable/google"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="Logo google"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgapi"
+            android:src="@drawable/facebook"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="Logo facebook"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/alternatif"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/backtologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="12sp"
+            android:textColor="@color/SecondaryColor"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:focusableInTouchMode="true"
+    android:background="@color/PrimaryColor">
+
+
+    <ImageView
+        android:id="@+id/shape.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/sudut" />
+
+    <ImageView
+        android:id="@+id/notif"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/lc_notifications_" />
+
+    <TextView
+        android:id="@+id/textViewhm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Find Your"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textView2hm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/textViewhm"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Next Happiness"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTexthm"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2hm"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/search_bg"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="36dp"
+        android:hint="Search Events"
+        android:textColor="#62878F" />
+
+    <TextView
+        android:id="@+id/textView3hm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="On Tour"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/editTexthm"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ontour_recycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/textView3hm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/textView4hm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@id/textView3hm"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="See All"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:layout_below="@+id/ontour_recycler"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventRecycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/textView5hm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:id="@+id/textView5hm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ontour_recycler"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Upcoming"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/navbarhome"
+        android:layout_width="300dp"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/navbarbiru"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/home"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_weight="1"
+            android:src="@drawable/grid"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="27dp"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/ticket"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
